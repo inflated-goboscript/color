@@ -1,3 +1,5 @@
+%include backpack/color/color
+
 costumes "blank.svg";
 
 onflag {
