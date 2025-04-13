@@ -21,4 +21,4 @@ struct cCBGBG {
     # The format that allows setting a sprite to any color
     c, b1, g1, b2, g2 
 }
-# HEX is just a string
+# HEX is just a string, BUT PLEASE DO NOT ADD THE '#' - this will affect performance a bit, so i did not implement it.
