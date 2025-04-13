@@ -83,10 +83,6 @@ func RGBA_to_CBGBG(cRGBA c) cCBGBG {
     return ret;
 }
 
-proc set_pen_color_RGBA cRGBA c {
-    set_pen_color RGBA($c.r, $c.g, $c.b, $c.a);
-}
-
 # https://www.rapidtables.com/convert/color/rgb-to-hsv.html
 func RGBA_to_HSVA(cRGBA c) cHSVA {
     local r = $c.r / 255;
