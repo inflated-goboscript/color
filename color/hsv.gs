@@ -1,7 +1,7 @@
 func HSVA_to_CBGBG (cHSVA c) cCBGBG {
     if $c.a == 0 {
         return cCBGBG{
-            # other values are irrelevant
+            # other values are irrelevant; it's completely invisible
             g1: 100,
             g2: 100
         };
@@ -35,7 +35,6 @@ func HSVA_to_CBGBG (cHSVA c) cCBGBG {
 
         return ret;
     }
-    
 }
 
 # https://www.rapidtables.com/convert/color/hsv-to-rgb.html
@@ -99,6 +98,8 @@ func HSVA_to_RGBA (cHSVA c) cRGBA {
                 a: a
             };
         }
-
     }
 }
+
+# m for macro-generated
+%define mHSV(_h,_s,_v) cHSVA{h:_h,s:_s,v:_v,a:100}
