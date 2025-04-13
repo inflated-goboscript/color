@@ -1,1 +1,5 @@
-costumes "blank.svg";
+costumes "blank.svg", "Soccer.png";
+
+onflag {
+    switch_backdrop "Soccer";
+}
