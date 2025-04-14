@@ -52,7 +52,7 @@ proc set_stamp_color_HEX c {
 ################################################################
 # ps = pen & stamp
 proc set_ps_color_HEX c {
-    set_pen_color $c;
+    set_pen_color "#" & $c;
     _stamp_colour = HEX_to_CBGBG($c);
 }
 
