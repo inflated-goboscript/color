@@ -1,16 +1,29 @@
-# test script. import works, but code isnt actually tested here
-%include backpack/color/color
+costumes "blank.svg";
 
-costumes "blank.svg", "circle.svg";
-hide;
+%include inflator/assert
+%include inflator/math
+%include inflator/string
+%include inflator/lazy
 
-onflag {
-    switch_costume "circle";
-    set_ps_color_RGB cRGB{r:139,g:26,b:59};
-    cstamp;
+%include inflator/base
 
-    # set_pen_color_HEX("FF0000");
-    # set_pen_size 100;
-    # pen_down;
-    # pen_up;
+%include inflator/color
+
+var h = 0;
+var s = 0;
+var b = 0;
+
+onflag {main;}
+nowarp proc main {
+    forever {
+        show h;
+        show s;
+        show b;
+
+        set_pen_color_HSVA cHSV(h, s, b);
+
+        erase_all;
+        set_pen_size 20;
+        pen_du;
+    }
 }

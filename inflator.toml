@@ -1,0 +1,9 @@
+# inflator.toml syntax documentation: https://github.com/faretek1/inflator#inflator
+name = 'color'
+version = "v0.0.0"
+username = "FAReTek1"
+
+[dependencies]
+string = "https://github.com/FAReTek1/string"
+base = "https://github.com/FAReTek1/base"
+math = "https://github.com/FAReTek1/math"
