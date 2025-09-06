@@ -1,9 +1,9 @@
 # inflator.toml syntax documentation: https://github.com/faretek1/inflator#inflator
 name = 'color'
 version = "v1.0.0"
-username = "FAReTek1"
+username = "inflated-goboscript"
 
 [dependencies]
-string = "https://github.com/FAReTek1/string"
-base = "https://github.com/FAReTek1/base"
-math = "https://github.com/FAReTek1/math"
+string = "https://github.com/inflated-goboscript/string"
+base = "https://github.com/inflated-goboscript/base"
+math = "https://github.com/inflated-goboscript/math"
